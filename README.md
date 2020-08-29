@@ -36,3 +36,8 @@ Run ```gui.py``` / ```final.py``` to launch with / without GUI respectively.
 ### Demo
 
 ![Python GUI demo](temp.gif)
+
+###  To-do 
+1. Improve speed of Python code by integrating C code using Cython module
+2. Use a more sophisticated OCR method
+
