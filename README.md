@@ -33,3 +33,6 @@ pip install tkinter
 ```
 Run ```gui.py``` / ```final.py``` to launch with / without GUI respectively.
 
+### Demo
+
+![Python GUI demo](temp.gif)
