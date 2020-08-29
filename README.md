@@ -10,6 +10,8 @@ Given an image of a sudoku grid, it performs following steps:
 7. Using KNN to perform OCR
 8. Solving the sudoku using backtracking
 
+Note: The images 14,15 work poorly on Python due to its slow speed and it is not recommended to run those on Python
+
 ## C++
 Requirements:
 ```bash
@@ -19,7 +21,7 @@ OpenCV >= 4.2.0
 Instruction on how to use:
 ```bash
 make final
-./final
+./final <path to an image>
 ```
 Note: the GUI version uses GTK+2.0 which is no longer in use
 
