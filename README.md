@@ -34,7 +34,7 @@ pip install tkinter
 Run ```gui.py``` / ```final.py``` to launch with / without GUI respectively.
 
 ## Python with C-based solver
-Improved the speed to Python code by integrating C code
+Improved the speed to Python code by integrating C code  
 Pre-requisites:
 ```bash
 cc -fPIC -shared -o c_solver.so c_solver.c
