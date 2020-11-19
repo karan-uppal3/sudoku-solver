@@ -10,7 +10,7 @@ Given an image of a sudoku grid, it performs following steps:
 7. Using KNN to perform OCR
 8. Solving the sudoku using backtracking
 
-Note: The images 14,15 work poorly on Python due to its slow speed and it is not recommended to run those on Python
+Note: The images 14,15 work poorly on the Python only versions due to its slow speed and it is not recommended to run those on Python
 
 ## C++
 Requirements:
@@ -33,11 +33,22 @@ pip install tkinter
 ```
 Run ```gui.py``` / ```final.py``` to launch with / without GUI respectively.
 
+## Python with C-based solver
+Improved the speed to Python code by integrating C code
+Pre-requisites:
+```bash
+cc -fPIC -shared -o c_solver.so c_solver.c
+pip install opencv-python
+pip install tkinter
+```
+Run ```gui.py``` to launch the application
+
 ### Demo
 
 ![Python GUI demo](temp.gif)
 
 ###  To-do 
-1. Improve speed of Python code by integrating C code using Cython module
-2. Use a more sophisticated OCR method
+1. Use a more sophisticated OCR method
+2. Add the functionality of generating a Sudoku
+3. Optimise the Sudoku Solver algorithm by trying variants like dancing links
 
