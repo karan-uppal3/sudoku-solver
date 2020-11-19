@@ -1,7 +1,8 @@
 from scanner import scanner
 from solver import sudoku
 
-scan = scanner("/home/zoh/Programming_Data/Projects/Sudoku_Solver/Pics/Train_data/4.jpg")
+scan = scanner(
+    "/home/zoh/Programming_Data/Projects/Sudoku_Solver/Pics/Train_data/4.jpg")
 scan.getDigits()
 
 grid = scan.grid

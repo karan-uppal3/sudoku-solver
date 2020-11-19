@@ -1,24 +1,25 @@
 import numpy as np
 
+
 class sudoku:
 
-    def __init__(self,grid):
+    def __init__(self, grid):
         self.arr = grid
 
     def show(self):
         print(self.arr)
 
-    def findc(self,c):
-        if 0 <= c <=2 :
+    def findc(self, c):
+        if 0 <= c <= 2:
             return 1
-        elif 3 <= c <= 5 :
+        elif 3 <= c <= 5:
             return 4
-        else :    
+        else:
             return 7
 
-    def isValid (self,x,y,num):
-        
-        for i in range(0,9):
+    def isValid(self, x, y, num):
+
+        for i in range(0, 9):
 
             if i == x:
                 continue
@@ -26,8 +27,8 @@ class sudoku:
             if self.arr[i][y] == num:
                 return False
 
-        for j in range(0,9):
-            
+        for j in range(0, 9):
+
             if j == y:
                 continue
 
@@ -37,41 +38,42 @@ class sudoku:
         i = self.findc(x)
         j = self.findc(y)
 
-        for k in range(i-1,i+2):
-            for l in range(j-1,j+2):
-                if k==x and l==y :
+        for k in range(i-1, i+2):
+            for l in range(j-1, j+2):
+                if k == x and l == y:
                     continue
                 if self.arr[k][l] == num:
                     return False
 
         return True
 
-    def emptyCell (self):
-        for i in range(0,9):
-            for j in range(0,9):
+    def emptyCell(self):
+        for i in range(0, 9):
+            for j in range(0, 9):
                 if self.arr[i][j] == 0:
-                    return (i,j)
+                    return (i, j)
 
-        return None,None
+        return None, None
 
-    def solve (self):
-        x,y = self.emptyCell()
+    def solve(self):
+        x, y = self.emptyCell()
 
         if x == None:
             return True
 
-        for k in range(1,10):
+        for k in range(1, 10):
 
-            if self.isValid(x,y,k) == True:
+            if self.isValid(x, y, k) == True:
 
                 self.arr[x][y] = k
 
                 if self.solve() == True:
                     return True
-                else :
+                else:
                     self.arr[x][y] = 0
 
         return False
+
 
 """
 s = sudoku(np.array([[0,3,9,1,0,0,0,0,0],
@@ -86,7 +88,3 @@ s = sudoku(np.array([[0,3,9,1,0,0,0,0,0],
 s.solve()        
 s.show()
 """
-        
-
-
-
