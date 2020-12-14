@@ -10,7 +10,7 @@ Given an image of a sudoku grid, it performs following steps:
 7. Using KNN to perform OCR
 8. Solving the sudoku using backtracking
 
-Note: The images 14,15 work poorly on the Python only versions due to its slow speed and it is not recommended to run those on Python
+Note: The images 14,15 work poorly on the Python only versions due to its slow speed and it is not recommended to run those on Python. However, it was resolved by using the C based backend.
 
 ## C++
 Requirements:
