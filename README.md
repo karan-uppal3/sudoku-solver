@@ -10,6 +10,10 @@ Given an image of a sudoku grid, it performs following steps:
 7. Using KNN to perform OCR
 8. Solving the sudoku using backtracking
 
+### Demo
+
+![Python GUI demo](temp.gif)
+
 Note: The images 14,15 work poorly on the Python only versions due to its slow speed and it is not recommended to run those on Python. However, it was resolved by using the C based backend.
 
 ## C++
@@ -42,10 +46,6 @@ pip install opencv-python
 pip install tkinter
 ```
 Run ```gui.py``` to launch the application
-
-### Demo
-
-![Python GUI demo](temp.gif)
 
 ###  To-do 
 1. Use a more sophisticated OCR method
