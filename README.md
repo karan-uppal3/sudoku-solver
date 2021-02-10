@@ -52,7 +52,7 @@ Run ```gui.py``` to launch the application
 2. Add the functionality of generating a Sudoku
 3. Optimise the Sudoku Solver algorithm by trying variants like dancing links
 4. Add the option to try out various methods to solve the Sudoku 
-  a. Dancing Links
-  b. Best First Search
-  c. Reverse Backtracking
-  d. Spiral Backtracking
+   1. Dancing Links
+   2. Best First Search
+   3. Reverse Backtracking
+   4. Spiral Backtracking
