@@ -51,4 +51,8 @@ Run ```gui.py``` to launch the application
 1. Use a more sophisticated OCR method
 2. Add the functionality of generating a Sudoku
 3. Optimise the Sudoku Solver algorithm by trying variants like dancing links
-
+4. Add the option to try out various methods to solve the Sudoku 
+  a. Dancing Links
+  b. Best First Search
+  c. Reverse Backtracking
+  d. Spiral Backtracking
